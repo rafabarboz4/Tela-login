@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="style/style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <main>
@@ -18,11 +19,11 @@
                 <h1>LOGIN</h1>
                 <form>
                     <h2>Usuario</h2>
-                    <input type="text" placeholder="Usuario">
+                    <input type="text" placeholder="Usuario" id="idUsuario">
                     <h2>Senha</h2>
-                    <input type="password" placeholder="Senha">
+                    <input type="password" placeholder="Senha" id="idPassword">
                 </form>
-                <button id="login-btn">LOGIN</button>
+                <button type="submit" id="login-btn" onclick="login(); return false">LOGIN</button>
             </div>
         </article>
     </main>
